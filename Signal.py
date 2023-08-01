@@ -181,7 +181,7 @@ def FI(r):
     BW=Dnu*N//2
     dnu_array=np.arange(-BW//2,BW//2,Dnu)
     FilterI = np.zeros((N // 2, N, N))
-    B=8*dnub
+    B=2*dnub
     def Int(U):
         def Visb(dnu):
             if 1 - (dnu/ dnub)**2 >= 10**-5:
